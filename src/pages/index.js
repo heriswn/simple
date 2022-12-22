@@ -15,6 +15,13 @@ const IndexPage = () => {
             that you have installed all required software tools. By the end of
             this part of the Tutorial, you will:
           </p>
+          <p>
+            Welcome to the Gatsby Tutorial! We’re excited you’re here. Before
+            you start building your first Gatsby site, you’ll need to
+            familiarize yourself with some core web technologies and make sure
+            that you have installed all required software tools. By the end of
+            this part of the Tutorial, you will:
+          </p>
         </section>
         <section>
           <h2>Privacy</h2>
