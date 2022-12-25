@@ -3,7 +3,11 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Heri Setiawan`,
+    description: `Knowledge is Free`,
+    twitterUsername: `@gswnheri`,
+    image: `/gatsby-icon.png`,
+    siteUrl: `https://swnheri.vercel.app`,
   },
   plugins: [
     "gatsby-plugin-postcss",
