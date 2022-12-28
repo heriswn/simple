@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../../components/layout";
-import { SEO } from "../../components/seo";
+import { Seo } from "../../components/seo";
 
 const BlogPost = ({ data, children }) => {
   return (
@@ -25,6 +25,6 @@ export const query = graphql`
   }
 `;
 
-export const Head = ({ data }) => <SEO title={data.mdx.frontmatter.title} />;
+export const Head = ({ data }) => <Seo title={data.mdx.frontmatter.title} />;
 
 export default BlogPost;
