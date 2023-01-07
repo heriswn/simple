@@ -7,20 +7,22 @@ import { Link } from "gatsby";
 const BlogPage = ({ data }) => {
   return (
     <Layout>
-      {data.allMdx.nodes.map((node) => (
-        <article
-          key={node.id}
-          className="w-[400px] p-[8px] font-sans text-[13px]"
-        >
-          <h2>
-            <Link to={`/blog/${node.frontmatter.slug}`}>
-              {node.frontmatter.title}
-            </Link>
-          </h2>
-          <p>Posted: {node.frontmatter.date}</p>
-          <p>{node.excerpt}</p>
-        </article>
-      ))}
+      <div className="block">
+        {data.allMdx.nodes.map((node) => (
+          <article
+            key={node.id}
+            className="w-[400px] p-[8px] font-sans text-[13px]"
+          >
+            <h2>
+              <Link to={`/blog/${node.frontmatter.slug}`}>
+                {node.frontmatter.title}
+              </Link>
+            </h2>
+            <p>Posted: {node.frontmatter.date}</p>
+            <p>{node.excerpt}</p>
+          </article>
+        ))}
+      </div>
     </Layout>
   );
 };

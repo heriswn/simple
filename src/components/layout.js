@@ -6,7 +6,7 @@ const Layout = ({children}) => {
   return (
     <>
       <Header />
-      <main className="flex justify-center text-black dark:text-white bg-white dark:bg-black mt-2 mb-4">{children}</main>
+      <main className="flex justify-center text-black dark:text-white bg-white dark:bg-black">{children}</main>
       <Footer/>
     </>
   );
