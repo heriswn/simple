@@ -20,25 +20,19 @@ export default class PostList extends Component {
     const postList = this.getPostList();
 
     return (
-      <div>
+      <>
         {postList.map((post) => {
           return (
-            <article
-              key={post.idUnique}
-              className="w-[400px] p-[8px] font-sans text-[13px]"
-              itemType="http://schema.org/Article"
-            >
+            <article key={post.idUnique} itemType="http://schema.org/Article">
               <h2>
-                <Link to={`/blog/${post.path}`}>
-                  {post.title}
-                </Link>
+                <Link to={`/blog/${post.path}`}>{post.title}</Link>
               </h2>
               <p>Posted: {post.date}</p>
               <p>{post.description}</p>
             </article>
           );
         })}
-      </div>
+      </>
     );
   }
 }

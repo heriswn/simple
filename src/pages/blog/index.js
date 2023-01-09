@@ -9,8 +9,8 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout>
-      <div className="block">
-        <PostList postEdges={posts}/>
+      <div className="block w-[400px] p-[8px] font-sans text-[13px]">
+        <PostList postEdges={posts} />
       </div>
     </Layout>
   );
