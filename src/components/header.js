@@ -6,7 +6,7 @@ const Header = () => (
   <header className="w-full flex justify-center bg-primary border-b-[1.5px] border-solid border-borderClr dark:border-darkBorderClr dark:bg-darkPrimary">
     <div className="w-[400px] flex mt-6 mb-6 max-sm:block max-sm:text-center">
       <StaticImage
-        src="../images/icon.png"
+        src="../../content/images/icon.png"
         alt="logo page"
         height={120}
         width={120}

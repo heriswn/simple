@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Heri Setiawan`,
     description: `Knowledge is Free`,
-    twitterUsername: `@gswnheri`,
+    twitterUsername: `@swnheri`,
     image: `/gatsby-icon.png`,
     siteUrl: `https://swnheri.vercel.app`,
   },
@@ -17,7 +17,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `blog`,
-        path: `${__dirname}/blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
     "gatsby-plugin-mdx",

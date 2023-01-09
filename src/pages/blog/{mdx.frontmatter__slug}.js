@@ -4,11 +4,13 @@ import Layout from "../../components/layout";
 import { Seo } from "../../components/seo";
 
 const BlogPost = ({ data, children }) => {
+  const post = data.mdx.frontmatter;
+
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout pageTitle={post.title}>
       <article className="w-[400px] p-[8px] font-sans text-[13px]">
-        <h1>{data.mdx.frontmatter.title}</h1>
-        <p>{data.mdx.frontmatter.date}</p>
+        <h1>{post.title}</h1>
+        <p>{post.date}</p>
         {children}
       </article>
     </Layout>
