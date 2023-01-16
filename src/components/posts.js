@@ -23,13 +23,17 @@ export default class PostList extends Component {
       <>
         {postList.map((post) => {
           return (
-            <article key={post.idUnique} itemType="http://schema.org/Article">
-              <h2>
-                <Link to={`/blog/${post.path}`}>{post.title}</Link>
-              </h2>
-              <p>Posted: {post.date}</p>
-              <p>{post.description}</p>
-            </article>
+            <div className="bg-darkSecondary rounded-lg mb-2 hover:bg-darkBorderClr p-2">
+              <article key={post.idUnique} itemType="http://schema.org/Article">
+                <div className="hover:text-darkSecondary">
+                  <h2>
+                  <Link to={`/blog/${post.path}`}>{post.title}</Link>
+                  </h2>
+                  <p>Posted: {post.date}</p>
+                  <p>{post.description}</p>
+                </div>
+              </article>
+            </div>
           );
         })}
       </>
